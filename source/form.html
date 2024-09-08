@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Подбор программы</title>
-</head>
-<body>
-    <header class="page-header">
-        <a class="page-heder__logo" href="#">
-         <img class="page-heder__logo-image" src="E:\projects\Kat energy\source\img\logo-mobile.svg" width="33.32" height="33.32" alt="Логотип сайта">
-         <p class="page-heder__name"><b>CAT</b> ENERGY</p>
-        </a>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
+  </head>
+  <body class="page-body">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <a class="logo" href="#">
+            <div class="logo__wrapper">
+                <picture>
+                  <img class="logo__image" src="img\logo-mobile.svg" width="33" height="33" alt="Логотип сайта">
+                </picture>
+                <p class="logo__name"><b>CAT</b> ENERGY</p>
+            </div>
+          </a>
+      <button class="page-header__toggler" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+      <div class="page-header__main-nav">
         <nav class="main-nav">
-         <button class="main-nav__toggler" type="button"></button>
-         <ul class="main-nav__list">
-           <li class="main-nav__item">
-             Главная
-           </li>
-           <li class="main-nav__item">
-             Каталог продукции
-           </li>
-           <li class="main-nav__item main-nav__item--current">
-             Подбор программы
-           </li>
-   
-         </ul>
+          <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">подбор программы</a>
+            </li>
+          </div>
+        </ul>
         </nav>
+      </div>
       </header>
-      <main>
+    <main>
         <h1 class="page-title">Подбор программы</h1>
         <section class="form">
             <h2 class="form__title">Заполните анкету, и мы подберем
@@ -35,29 +44,48 @@
             </h2>
             <form class="form__form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="form__programm-fieldset">
+                <div class="form__wrapper">
                 <div class="form__box1">
-                    <label class="form__name-label" for="cat-name" requared>ИМЯ:*</label>
-                    <input class="form__name" type="text" placeholder="Барсик" name="cat-name" id="cat-name"> 
+                  <div class="form__line">
+                    <label class="form__name-label" for="cat-name">ИМЯ:*</label>
+                    <input class="form__name" type="text" placeholder="Барсик" name="cat-name" id="cat-name" required>
+                  </div>
+                  <div class="form__line">
                     <label class="form__weigh-label" for="cat-weight">Вес (кг):*</label>
                     <input class="form__weight" type="number" placeholder="7" id="cat-weight" step="100">
+                  </div>
+                  <div class="form__line">
                     <label class="form__age-label" for="cat-age">Возраст (лет):</label>
                     <input class="form__age" type="number" placeholder="7" id="cat-age">
+                  </div>
                 </div>
                 <div class="form__box2">
+                  <div class="form__line">
                     <input class="form__weight-loss-radio" type="radio" name="goal" value="weight-loss" id="weight-loss" checked>
                     <label  class="form__weight-loss-label" for="weight-loss">Похудение</label>
+                  </div>
+                  <div class="form__line">
                     <input class="form__weight-gain-radio" type="radio" name="goal" value="weight-gain" id="weight-gain">
                     <label class="form__weigh-gain-label" for="weight-gain">Набор массы</label>
+                  </div>
+                    <div class="form__line">
                     <input class="form__dont-know-input" type="radio" name="goal" value="dont-know" id="dont-know">
                     <label class="form__dont-know-label" for="dont-know">Не знаю(нужен ваш совет)</label>
+                  </div>
                 </div>
+              </div>
                 </fieldset>
+
                 <fieldset>
                   <legend>Контактные данные (владельца кота)</legend>
+                <div class="form__line">
                   <label class="form__email-label" for="email">E-mail:*</label>
-                  <input class="form__email-input" type="text" name="email" id="email" requared>
+                  <input class="form__email-input" type="text" name="email" id="email" required>
+                </div>
+                  <div class="form__line">
                   <label class="form__phone-label" for="phone">Телефон:*</label>
                   <input class="form__phone-input" type="text" name="phone" id="phone">
+                </div>
                 </fieldset>
                 <fieldset>
                   <legend>Комментарий</legend>
@@ -80,8 +108,8 @@
         </section>
         <section class="adress">
           <p class="adress__text">Приглашаем к сотрудничеству!</p>
-          <adress class="asress__superscription">ул. Большая 
-            Конюшенная, д. 19/8
+          <adress class="asress__superscription">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
             Санкт-Петербург</adress>
             <iframe class="adress__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2326.4997215879357!2d30.320472477476358!3d59.938716474915154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e1!3m2!1sru!2sru!4v1719161745529!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
@@ -113,8 +141,8 @@
             </svg>
         </section>
       </footer>
- </main>
-</body>
+  </main>
+  </body>
 </html>
       </main>
 </body>

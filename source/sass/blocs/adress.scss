@@ -1,0 +1,30 @@
+.adress__container {
+  padding-top: 25px;
+}
+.adress__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.adress__text {
+  width: 139px;
+  margin: 0;
+  margin-left: 20px;
+  color: #111;
+  font-size: 16px;
+  text-transform: uppercase;
+  @media (min-width: $tablet-min-width) {
+    margin-left: 70px;
+  }
+}
+
+.adress__superscription {
+  color: $special_dark-grey;
+  text-align: right;
+  font-family: Arial;
+  font-size: 16px;
+  margin: 20px;
+  @media (min-width: $tablet-min-width) {
+    margin-left: 70px;
+  }
+
+}

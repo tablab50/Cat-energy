@@ -1,0 +1,54 @@
+@font-face {
+  font-weight:500;
+  font-family: "Oswald";
+  src: url(../fonts/oswaldmedium.woff2);
+}
+@font-face {
+  font-weight:400;
+  font-family: "Oswald";
+  src: url(../fonts/oswaldregular.woff);
+}
+@font-face {
+  font-weight:500;
+  font-family: "Oswald";
+  src: url(../fonts/oswaldmedium.woff);
+}
+
+@import "blocs/page-body.scss";
+@import "global/mixins.scss";
+@import "blocs/page-header.scss";
+@import "blocs/logo";
+@import "blocs/main-nav.scss";
+@import "blocs/programms.scss";
+@import "blocs/greetings.scss";
+@import "blocs/how-it-works.scss";
+@import "blocs/example.scss";
+@import "blocs/adress.scss";
+@import "blocs/page-footer.scss";
+@import "blocs/socials.scss";
+@import "blocs/form.scss";
+@import "blocs/copyright.scss";
+
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ * {
+  box-sizing: border-box;
+ }

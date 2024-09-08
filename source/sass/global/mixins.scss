@@ -1,0 +1,16 @@
+$basic-green: #68B738;
+$basic-grey: #F2F2F2;
+$special-dark-grey: #444444;
+$tablet-min-width: 768px;
+$desktop-min-width: 1440px;
+@mixin list-zero {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

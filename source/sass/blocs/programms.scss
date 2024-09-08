@@ -1,0 +1,110 @@
+.programms{
+  margin: 20px;
+  margin-top: 5px;
+}
+
+.programms__container {
+  padding: 20px;
+  padding-top: 5px;
+
+}
+.programms__choose-programm {
+  width: 272px;
+  height: 42px;
+  margin: 0 auto;
+  margin-top: 140px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  border: none;
+  font-family: Oswald;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  @media (min-width: 1440px) {
+    margin: 0;
+    margin-left: 60px;
+    margin-top: 52px;
+    margin-bottom: 260px;
+  }
+}
+
+.programms__list {
+  display: grid;
+  gap: 20px;
+  @include list-zero;
+  display: flex;
+  flex-direction: column;
+  margin:20px;
+  @media (min-width: 1000px) {
+  flex-direction: row;
+  }
+  }
+
+  .programms__item {
+    min-width:570px;
+    background-color: $basic-grey;
+    padding: 20px;
+    @media (min-width: 1440px){
+      margin-left: 110px;
+      padding-top: 77px;
+      padding-bottom: 60px;
+      padding-left: 52px;
+      padding-right: 52px;
+    }
+  }
+
+  .programms__title {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 70px;
+    position: relative;
+  }
+
+  .programms__item:first-child .programms__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: -69px;
+    background: url(/source/img/cat_back.svg);
+  }
+  .programms__item:nth-child(2) .programms__title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    top: 0;
+    left: -78px;
+    background: url(../../img/cat_back_2.svg);
+
+  }
+
+  .programms__link {
+    color: #000;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    position: relative;
+  }
+
+  .programms__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../../img/arrow.svg);
+    width: 32px;
+    height: 10px;
+    top: 6px;
+    right: -42px;
+  }

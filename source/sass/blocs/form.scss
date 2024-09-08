@@ -1,0 +1,28 @@
+.form__wrapper {
+  @media (min-width:1440px) {
+    display: flex;
+  }
+}
+
+.form__line {
+  display:flex;
+  align-items: center;
+
+}
+
+.form__name {
+  display: block;
+  width: 70%;
+}
+
+.form__weight {
+  display: block;
+  width: 59%;
+
+}
+
+.form__age {
+  display: block;
+  width: 53%;
+}
+
