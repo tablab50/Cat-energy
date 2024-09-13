@@ -6,28 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="page-header">
-        <a class="page-heder__logo" href="#">
-          <img class="page-heder__logo-image" src="img\logo-mobile.svg" width="33" height="33" alt="Логотип сайта">
-          <p class="page-heder__name"><b>CAT</b> ENERGY</p>
+  <header class="page-header">
+    <div class="page-header__container">
+      <div class="page-header__wrapper">
+        <a class="logo" href="#">
+          <div class="logo__wrapper">
+                <img class="logo__image" src="img\logo-mobile.svg"  alt="Логотип сайта">
+              <p class="logo__name"><b>CAT</b> ENERGY</p>
+          </div>
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggler" type="button"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              Главная
-            </li>
-            <li class="main-nav__item">
-              Каталог продукции
-            </li>
-            <li class="main-nav__item">
-              Подбор программы
-            </li>
-
-          </ul>
-        </nav>
-      </header>
-      <main class="catalog__main">
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggler" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="" class="main-nav__link main-nav__link--active">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html" class="main-nav__link">подбор программы</a>
+          </li>
+      </ul>
+      </nav>
+    </div>
+  </div>
+    </header>
+    <main class="catalog__main">
         <h1 class="catalog-title">Каталог продукции</h1>
         <section class="products">
         <ul class="products__list">

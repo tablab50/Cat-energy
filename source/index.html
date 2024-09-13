@@ -12,9 +12,18 @@
         <div class="page-header__wrapper">
           <a class="logo" href="#">
             <div class="logo__wrapper">
-                  <img class="logo__image" src="img\logo-mobile.svg"  alt="Логотип сайта">
-                <p class="logo__name"><b>CAT</b> ENERGY</p>
-            </div>
+              <picture>
+                <source srcset="image-small.jpg" media="(max-width: 768px)">
+                <source srcset="image-medium.jpg" media="(max-width: 1024px)">
+                <source srcset="image-large.jpg">
+                <img src="image-default.jpg" alt="Image description">
+              </picture>
+              <picture>
+                <source srcset="image-small.jpg" media="(max-width: 768px)">
+                <source srcset="image-large.jpg">
+                <img src="image-default.jpg" alt="Image description">
+              </picture>
+          </div>
           </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggler" type="button"><span class="visually-hidden">Открыть меню</span></button>

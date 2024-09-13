@@ -2,9 +2,6 @@
   text-decoration: none;
 }
 
-.logo__wrapper {
-  display: flex;
-}
 .logo__name {
   @include centerer;
   margin: 0;
