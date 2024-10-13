@@ -224,12 +224,20 @@
   grid-area: picture;
   width: 280px;
   height: 232px;
-  background: url(../img/before-mobile.png);
+  background: url(../img/before-mobile@1.png);
   margin: 0 auto;
-  @media (min-width: 768px) {
+  @media (min-resolution: 2dppx) {
+    background: url(../img/before-mobile@2.png);
+    background-size: cover;
+  }
+  @media (min-width: $tablet-min-width) {
     width: 592px;
     height: 511px;
-    background: url(../../img//cat-fat.png);
+    background: url(../img/before-cat@1.png);
+    @media (min-resolution: 2dppx) {
+      background: url(../img/before-cat@2.png);
+      background-size: cover;
+    }
   }
 }
 
