@@ -6,10 +6,8 @@
   @include centerer;
   margin: 0;
   color:black;
-  @media (min-width: 768px) {
-    position: initial;
-    transform: none;
-    align-self: center;
+  @media (min-width: $tablet-min-width) {
+    display: none;
   }
 }
 

@@ -55,47 +55,64 @@
   }
 
   .programms__item {
-    min-width:570px;
+    position: relative;
     background-color: $basic-grey;
     padding: 20px;
-    @media (min-width: 1440px){
+    min-width: 280px;
+    min-height: 266px;
+    @media (min-width: $tablet-min-width){
+      padding-right: 316px;
+      padding-left:53px;
+      padding-top: 77px
+    }
+    @media (min-width: $desktop-min-width){
       margin-left: 110px;
       padding-top: 77px;
       padding-bottom: 60px;
       padding-left: 52px;
       padding-right: 52px;
+      min-width:570px;
+      min-height: 372px;
+
     }
   }
-
+.programms__slim-cat-icon{
+  position: absolute;
+  top: 47px;
+  left: 52px;
+  @media only screen and (max-width: $desktop-min-width) and (min-width: $tablet-min-width) {
+  width: 200px;
+  height: 211px;
+  top: 81px;
+  right: 62px;
+  left: auto;
+  }
+}
   .programms__title {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
     margin-left: 70px;
     position: relative;
+    @media (min-width: $tablet-min-width){
+      margin-left: 0px;
+      font-size: 36px;
+    }
+    @media (min-width: $desktop-min-width){
+      margin-left: 165px;
+    }
   }
 
-  .programms__item:first-child .programms__title::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0;
-    left: -69px;
-    background: url(/source/img/cat_back.svg);
-  }
-  .programms__item:nth-child(2) .programms__title:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 67px;
-    height: 50px;
-    top: 0;
-    left: -78px;
-    background: url(../../img/cat_back_2.svg);
-
+  .programms__text{
+    font-size: 14px;
+    @media (min-width: $desktop-min-width){
+    margin-top: 47px;
+    }
+    @media (min-width:$tablet-min-width){
+      min-width:340px;
+      margin-bottom: 52px;
+    }
   }
 
   .programms__link {
@@ -106,15 +123,6 @@
     font-size: 16px;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: 57px;
   }
 
-  .programms__link::after {
-    content: "";
-    display: block;
-    position: absolute;
-    background: url(../../img/arrow.svg);
-    width: 32px;
-    height: 10px;
-    top: 6px;
-    right: -42px;
-  }

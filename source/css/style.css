@@ -50,9 +50,7 @@
 }
 @media (min-width: 768px) {
   .logo__name {
-    position: initial;
-    transform: none;
-    align-self: center;
+    display: none;
   }
 }
 
@@ -197,9 +195,18 @@
 }
 
 .programms__item {
-  min-width: 570px;
+  position: relative;
   background-color: #F2F2F2;
   padding: 20px;
+  min-width: 280px;
+  min-height: 266px;
+}
+@media (min-width: 768px) {
+  .programms__item {
+    padding-right: 316px;
+    padding-left: 53px;
+    padding-top: 77px;
+  }
 }
 @media (min-width: 1440px) {
   .programms__item {
@@ -208,38 +215,59 @@
     padding-bottom: 60px;
     padding-left: 52px;
     padding-right: 52px;
+    min-width: 570px;
+    min-height: 372px;
+  }
+}
+
+.programms__slim-cat-icon {
+  position: absolute;
+  top: 47px;
+  left: 52px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
+  .programms__slim-cat-icon {
+    width: 200px;
+    height: 211px;
+    top: 81px;
+    right: 62px;
+    left: auto;
   }
 }
 
 .programms__title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
   margin-left: 70px;
   position: relative;
 }
-
-.programms__item:first-child .programms__title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: -69px;
-  background: url(/source/img/cat_back.svg);
+@media (min-width: 768px) {
+  .programms__title {
+    margin-left: 0px;
+    font-size: 36px;
+  }
+}
+@media (min-width: 1440px) {
+  .programms__title {
+    margin-left: 165px;
+  }
 }
 
-.programms__item:nth-child(2) .programms__title:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 67px;
-  height: 50px;
-  top: 0;
-  left: -78px;
-  background: url(../../img/cat_back_2.svg);
+.programms__text {
+  font-size: 14px;
+}
+@media (min-width: 1440px) {
+  .programms__text {
+    margin-top: 47px;
+  }
+}
+@media (min-width: 768px) {
+  .programms__text {
+    min-width: 340px;
+    margin-bottom: 52px;
+  }
 }
 
 .programms__link {
@@ -250,17 +278,7 @@
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
-}
-
-.programms__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: url(../../img/arrow.svg);
-  width: 32px;
-  height: 10px;
-  top: 6px;
-  right: -42px;
+  margin-bottom: 57px;
 }
 
 .greetings {
@@ -410,8 +428,9 @@
     height: 499px;
     background: url(../img/index-can.png);
     background-repeat: no-repeat;
-    top: 32px;
-    right: 316px;
+    top: 145px;
+    left: 572px;
+    transform: none;
   }
 }
 
